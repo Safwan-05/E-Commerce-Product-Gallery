@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive E-Commerce Product Gallery</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .price {
+            color: #e63946;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #0077cc;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #005fa3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Responsive E-Commerce Product Gallery</h1>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://picsum.photos/300/220?random=1">
+            <div class="card-content">
+                <h2>Wireless Headphones</h2>
+                <p>High quality sound with noise cancellation.</p>
+                <p class="price">$120</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/220?random=2">
+            <div class="card-content">
+                <h2>Smart Watch</h2>
+                <p>Track your fitness and daily activities.</p>
+                <p class="price">$90</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/220?random=3">
+            <div class="card-content">
+                <h2>Gaming Mouse</h2>
+                <p>RGB lighting with ergonomic design.</p>
+                <p class="price">$45</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/220?random=4">
+            <div class="card-content">
+                <h2>Laptop Backpack</h2>
+                <p>Water resistant backpack for laptops.</p>
+                <p class="price">$55</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/220?random=5">
+            <div class="card-content">
+                <h2>Bluetooth Speaker</h2>
+                <p>Portable speaker with deep bass.</p>
+                <p class="price">$75</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://picsum.photos/300/220?random=6">
+            <div class="card-content">
+                <h2>Mechanical Keyboard</h2>
+                <p>RGB mechanical keyboard for gaming.</p>
+                <p class="price">$95</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
